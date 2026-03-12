@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+.Python
+
+# Virtual envs
+.venv/
+venv/
+env/
+
+# IDE
+.idea/
+.vs/
+
+# OS
+Thumbs.db
+Desktop.ini
+
+# Ultralytics / training artifacts
+runs/
+
+# Data / outputs
+datasets/
+dataset_bienso/
+output_plates/
+temp_captured_image.jpg
+
+# Models / weights
+*.pt
+*.onnx
+
+# Local DB
+*.db
+
