@@ -18,17 +18,28 @@ Thumbs.db
 Desktop.ini
 
 # Ultralytics / training artifacts
-runs/
+# Keep only runs/detect/train5 in git.
+runs/**
+!runs/detect/
+runs/detect/**
+!runs/detect/train5/
+!runs/detect/train5/**
 
 # Data / outputs
-datasets/
-dataset_bienso/
+# Keep dataset folder structure but not the data.
+datasets/**
+!datasets/**/.gitkeep
+dataset_bienso/**
+!dataset_bienso/**/.gitkeep
 output_plates/
 temp_captured_image.jpg
 
 # Models / weights
 *.pt
 *.onnx
+
+# Allow train5 weights to be committed
+!runs/detect/train5/weights/*.pt
 
 # Local DB
 *.db
